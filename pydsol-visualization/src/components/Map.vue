@@ -4,7 +4,7 @@ import { LMap, LGeoJson, LTileLayer } from "@vue-leaflet/vue-leaflet";
 </script>
 
 <template>
-    <l-map style="height:70vh" :center="center"> 
+    <l-map style="height:70vh" :center="center" :zoom="zoom"> 
     <l-tile-layer :url="url" :zoom="zoom" :attribution="attribution" />
     <l-geo-json :geojson="geojson" :options="geojsonOptions" />
     
